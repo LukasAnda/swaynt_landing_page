@@ -3,34 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About — Swaynt</title>
-  <meta name="description" content="Swaynt is an independent software studio founded in 2026. We craft mobile apps and games with a focus on quality over quantity.">
-  <meta property="og:title" content="About — Swaynt">
-  <meta property="og:description" content="An independent software studio focused on craft.">
+  <title>Contact — Swaynt</title>
+  <meta name="description" content="Get in touch with Swaynt. Email us at support@swaynt.com.">
+  <meta property="og:title" content="Contact — Swaynt">
+  <meta property="og:description" content="Get in touch with Swaynt.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://swaynt.com/about">
+  <meta property="og:url" content="https://swaynt.com/contact">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%230a0a0a'/><text x='50' y='68' font-family='Georgia,serif' font-size='52' font-weight='bold' fill='white' text-anchor='middle'>S</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
 
   <div class="container">
     <nav>
-      <a href="index.html" class="logo">Swaynt</a>
+      <a href="/" class="logo">Swaynt</a>
       <div class="nav-links">
-        <a href="about.html" class="nav-link active">About</a>
-        <a href="services.html" class="nav-link">Services</a>
-        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="/about" class="nav-link">About</a>
+        <a href="/services" class="nav-link">Services</a>
+        <a href="/contact" class="nav-link active">Contact</a>
       </div>
     </nav>
   </div>
 
   <div class="container">
     <section class="page-header">
-      <h1 class="animate-up">Building software<br>with intention.</h1>
+      <h1 class="animate-up">Get in touch</h1>
     </section>
   </div>
 
@@ -39,9 +39,22 @@
   </div>
 
   <div class="container">
-    <section class="page-content">
-      <p class="animate-up" style="animation-delay: 0.3s;">Swaynt is an independent software studio founded in 2026. We craft mobile apps and games with a focus on quality over quantity.</p>
-      <p class="animate-up" style="animation-delay: 0.45s;">We believe great software comes from small teams with clear vision. Every project gets our full attention — no assembly lines, no shortcuts.</p>
+    <section class="contact-info page-content">
+      <div class="contact-block animate-up" style="animation-delay: 0.3s;">
+        <div class="contact-label">Email</div>
+        <div class="contact-value">
+          <a href="#" onclick="return false;"><span id="e"></span></a>
+        </div>
+      </div>
+
+      <div class="contact-block animate-up" style="animation-delay: 0.45s;">
+        <div class="contact-label">Address</div>
+        <div class="contact-value">
+          75 E 3rd St<br>
+          Sheridan, WY 82801<br>
+          USA
+        </div>
+      </div>
     </section>
   </div>
 
@@ -56,8 +69,8 @@
         <div class="footer-address">75 E 3rd St, Sheridan, WY 82801</div>
       </div>
       <div class="footer-right">
-        <a href="privacy.html" class="footer-link">Privacy Policy</a>
-        <a href="#" class="footer-link" onclick="return false;"><span id="e"></span></a>
+        <a href="/privacy" class="footer-link">Privacy Policy</a>
+        <a href="#" class="footer-link" onclick="return false;"><span id="e2"></span></a>
       </div>
     </footer>
   </div>
@@ -69,10 +82,18 @@
       var h=['s','w','a','y','n','t'];
       var t=['.','c','o','m'];
       var r=p.join('')+d+h.join('')+t.join('');
+
       var el=document.getElementById('e');
       el.textContent=r;
       el.parentElement.href='mai'+'lto:'+r;
       el.parentElement.onclick=null;
+
+      var el2=document.getElementById('e2');
+      if(el2){
+        el2.textContent=r;
+        el2.parentElement.href='mai'+'lto:'+r;
+        el2.parentElement.onclick=null;
+      }
     })();
   </script>
 
